@@ -1,0 +1,13 @@
+grpc:
+  client:
+    product-service-blocking-client:
+      address: static://localhost:9090
+      negotiationType: plaintext
+    product-service-client:
+      address: static://localhost:9090
+      negotiationType: plaintext
+    order-service-client:
+      address: static://localhost:9091
+      negotiationType: plaintext
+  server:
+    port: 5543
